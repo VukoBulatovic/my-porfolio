@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulatovic Vuko - QA portfolio</title>
+    <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+    <div class="portfolio-container">
+        <div class="portfolio-row header-wrap">
+            <div class="brand-name">
+                <a href="#" onclick="window.location.reload(); return false;" class="logo">Bulatovic Vuko</a>
+            </div>
+            <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="porfolio-navbar">
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="Vuko-Bulatovic-CV.pdf" target="_blank">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="slide-carusel">
+    <div class="slider">
+        <div class="portfolio-container">
+            <div class="slider-content">
+                <div class="slider-general">
+                    <span class="welcome-msg">
+                        Welcome!!!
+                    </span>
+                    <div class="welcome-text">
+                        <h1>
+                            Hi, I am
+                        </h1>
+                        <div class="text-wrap">
+                            <h2 class="main-title">Bulatovic Vuko</h2>
+                            <h2 class="hover-title">Bulatovic Vuko</h2>
+                        </div>
+                        <p>
+                            I'm a Junior QA Tester looking for a beginner role to demonstrate and expand my knowledge and skills. I have strong analytical and problem-solving skills that make an ideal combination with my creative and critical thinking. Years of work experience in different collectives have contributed to the development of my soft skills such as teamwork, and adaptability.
+                        </p>
+                        <div class="download-resume">
+                            <a href="Vuko-Bulatovic-CV.pdf" target="_blank">
+                                Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-image">
+                    <div class="welcome-image">
+                        <img src="image/vuko-image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="portfolio-container">
+        <div class="text-wrap">
+            <h2 class="main-title">Stay Connected</h2>
+            <h2 class="hover-title">Stay Connected</h2>
+        </div>
+        <div class="contact-info">
+            <a href="https://www.google.com/maps/place/44%C2%B048'09.1%22N+20%C2%B031'20.0%22E?hl=sr" target="_blank">
+                Dragoslava Srejovica 64, Belgrade Serbia
+            </a>
+            <h3 id="myHeading">bulatovic.vuko@gmail.com</h3>
+            <script>
+              const headingElement = document.getElementById('myHeading');
+              headingElement.addEventListener('click', function() {
+                window.location.href = 'mailto:bulatovic.vuko@gmail.com';
+              });
+            </script>
+            <a href="tel:+381645275527">
+                + 381 64 527 5 527
+            </a>
+        </div>
+        <div class="social-link">
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/vuko-bulatovi%C4%87/" target="_blank">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/VukoBulatovic" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/vuko.bulatovic/" target="_blank">Instagram</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<script>
+    const hamburger = document.querySelector(".hamburger");
+    hamburger.addEventListener("click",function(){
+        document.querySelector(".portfolio-navbar").classList.toggle("show");
+    })
+</script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
